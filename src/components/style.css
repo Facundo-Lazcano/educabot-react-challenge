@@ -1,0 +1,167 @@
+.contenedor {
+  background-color: #f8f8f6;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.titulo {
+  font-weight: 500;
+  line-height: 36.46px;
+  letter-spacing: 1%;
+  color: #4f36d6;
+  padding: 40px 0;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.cuadro-arriba {
+  background-color: #ffffff;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border: 1px solid #dfdfda;
+  padding: 1rem;
+}
+.tarea-nueva {
+  background-color: #f4fbff;
+  padding: 1rem;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border: 1px solid #dfdfda;
+}
+
+.tarea-entregada {
+  background-color: #F8F8F6;
+  padding: 1rem;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border: 1px solid #dfdfda;
+}
+
+.cuadro-abajo {
+  background-color: #ffffff;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border: 1px solid #dfdfda;
+  border-top-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+}
+
+.icono-lectura {
+  background-color: rgba(1, 206, 170, 0.15);
+  border-radius: 6px;
+  height: 40px;
+  width: 40px;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icono-preguntas {
+  background-color: rgba(255, 184, 0, 0.15);
+  border-radius: 6px;
+  height: 40px;
+  width: 40px;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.centro-icono-preguntas {
+  color: rgb(255, 184, 0);
+  color: linear-gradient(
+    45deg,
+    rgba(255, 184, 0, 1) 50%,
+    rgba(25, 37, 101, 1) 50%
+  );
+}
+
+.icono {
+  z-index: 999;
+}
+
+.descripcion {
+  font-weight: bold;
+  font-size: 16px;
+  text-align: left;
+  margin-left: 8px;
+}
+
+.calendario {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  margin-bottom: 8px;
+}
+.fecha-entrega {
+  display: flex;
+  flex-direction: row;
+}
+
+.progreso {
+  margin-left: 8px;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.detalle-progreso {
+  display: flex;
+  flex-direction: row;
+  margin: 0 8px;
+  font-size: 14px;
+}
+
+.boton {
+  bottom: 12;
+  right: 12;
+}
+
+@media (min-width: 768px) {
+  .boton {
+    top: 12;
+    right: 12;
+  }
+  .progreso {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .descripcion {
+    font-size: 18px;
+    font-weight: normal;
+  }
+
+  .progreso {
+    padding: 16px 0;
+    margin: 0;
+  }
+  .detalle-progreso {
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+  }
+  .fecha-entrega {
+    flex-direction: column;
+  }
+}
+
+.materia {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 8px;
+  border: 1px solid #dfdfda;
+  box-sizing: border-box;
+  border-radius: 16px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+}
